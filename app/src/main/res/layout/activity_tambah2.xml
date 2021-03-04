@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tambah">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="#4169E1"
+        android:layout_height="70dp">
+
+        <ImageButton
+            android:id="@+id/kembali2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:text="Pesan Tiket"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textSize="26sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/Asal"
+                android:layout_width="155sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:ems="120"
+                android:focusable="false"
+                android:hint="Asal"
+                android:textSize="18sp">
+            </AutoCompleteTextView>
+
+            <AutoCompleteTextView
+                android:id="@+id/Tujuan"
+                android:layout_width="155sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:ems="120"
+                android:focusable="false"
+                android:hint="Tujuan"
+                android:layout_marginLeft="30dp"
+                android:textSize="18sp">
+            </AutoCompleteTextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/Kereta"
+        android:layout_width="340sp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Pilih Kereta"
+        android:textSize="18sp"></AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/Kelas"
+        android:layout_marginTop="10sp"
+        android:layout_width="340sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:ems="120"
+        android:focusable="false"
+        android:hint="Kelas"
+        android:textSize="18sp">
+    </AutoCompleteTextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/Berangkat"
+                android:layout_width="155sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:ems="120"
+                android:focusable="false"
+                android:hint="Keberangkatan"
+                android:textSize="18sp">
+            </AutoCompleteTextView>
+
+            <EditText
+                android:id="@+id/Kedatangan"
+                android:layout_width="155sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Kedatangan"
+                android:layout_marginLeft="30dp"
+                android:textSize="18sp"
+                android:text="">
+            </EditText>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btnLanjut2"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:text="Lanjut"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        />
+
+</LinearLayout>

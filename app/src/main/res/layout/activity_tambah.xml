@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tambah">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="#4169E1"
+        android:layout_height="70dp">
+
+        <ImageButton
+            android:id="@+id/kembali1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:text="Pesan Tiket"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textSize="26sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:hint="No KTP"
+        android:id="@+id/noKTP"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:inputType="textFilter"
+        />
+    <EditText
+        android:id="@+id/Nama"
+        android:hint="Nama"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""/>
+
+    <EditText
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/TanggalBrkt"
+        android:hint="Tanggal Keberangkatan"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btnLanjut"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:text="Lanjut"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        />
+
+</LinearLayout>
